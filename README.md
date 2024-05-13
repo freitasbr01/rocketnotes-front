@@ -35,7 +35,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="https://blog.rocketseat.com.br/author/Alan/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/137903019?s=400&u=a5d7cc78d579a664a0b95b010c70d153f0265b60&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Alan Freitas</b></sub></a> <a href="https://blog.rocketseat.com.br/author/Alan/">🚀
+ <sub><b>Alan Freitas</b></sub> <a href="https://blog.rocketseat.com.br/author/Alan/">🚀
  </a>
  <br />
 
