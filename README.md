@@ -13,7 +13,7 @@
 
 Nesse projeto foi desenvolvido um aplicativo web para criar notas. A plataforma permite aos usuários criar uma conta pessoal onde podem acessar e personalizar sua própria lista de notas. Oferece também a funcionalidade de atribuir tags a cada nota que o usuário criou.
 
-Link de acesso - <a href="https://rocketnotes02.netlify.app/">RocketNotes</a>
+Link de acesso - <a target _blank href="https://rocketnotes02.netlify.app/">RocketNotes</a>
 
 Projeto desenvolvido durante o Curso Explorer da **Rocketseat**.
 
