@@ -1,8 +1,5 @@
-// Rotas da aplicação, vai dar acesso as telas após o login.
-
 import { Routes, Route, Navigate } from 'react-router-dom';
-// Routes - vai envolver todas as minhas rotas.
-// Route - para cada rota eu digo qual é o endereço, em barra eu quero renderizar o elemento minha Home.
+
 
 import { New } from '../pages/New';
 import { Home } from '../pages/Home';
@@ -21,6 +18,3 @@ export function AppRoutes() {
     </Routes>
   )
 }
-
-
-// Rotas de autenticação, vai dar acesso as páginas quando o usuário não está logado.

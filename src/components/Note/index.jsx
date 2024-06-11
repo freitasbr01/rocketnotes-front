@@ -19,5 +19,3 @@ export function Note({ data, ...rest }) {
     </Container>
   )
 }
-
-// Para cada item que a gente está percorrendo de Tags, estamos renderizando um componente chamado Tag e paddando uma chave e um title

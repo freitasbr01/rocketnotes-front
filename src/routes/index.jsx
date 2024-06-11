@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { useAuth } from '../hooks/auth'; // importa o hook de autenticação para acessar o usuário
+import { useAuth } from '../hooks/auth'; 
 
 import { AppRoutes } from './app.routes';
 import { AuthRoutes } from './auth.routes';

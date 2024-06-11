@@ -14,4 +14,3 @@ export default {
   }
 };
 
-// Técnica de token de cores ou FontFaceSet

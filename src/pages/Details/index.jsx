@@ -11,7 +11,7 @@ import { Section } from '../../components/Section';
 import { ButtonText } from '../../components/ButtonText';
 
 export function Details() {
-  const [data, setData] = useState(null); // Criar um estado para armazenar as informações da nota.
+  const [data, setData] = useState(null); 
 
   const params = useParams();
   const navigate = useNavigate();
@@ -28,25 +28,22 @@ export function Details() {
       navigate(-1)
     }
   }
-  // window.confirm é do próprio js e eu coloco uma mensagem, então o confirm vai guardar um verdadeiro ou falso.
   
   useEffect(() => {
     async function fetchNote() {
       const response = await api.get(`/notes/${params.id}`)
       setData(response.data);
-
     }
 
     fetchNote();
   })
-  // Quero usar o useEffect para buscar por esse parâmetro e buscar as notas para mim quando a minha interface for carregada.
 
   return (
     <Container>
       <Header />
     
     {
-      data && // Se tem conteúdo mostra o data, se não tem conteúdo não mostra o data
+      data && 
       <main>
       <Content>
         <ButtonText
@@ -61,7 +58,6 @@ export function Details() {
         <p>
           {data.description}
         </p>
-
 
         {
           data.links &&
@@ -81,7 +77,7 @@ export function Details() {
         }
 
         {
-          data.tags && // Só vou renderizar essa seção se tiver tags para ser renderizadas.
+          data.tags && 
           <Section title="Marcadores">
             {
               data.tags.map(tag => (
@@ -101,9 +97,6 @@ export function Details() {
       </Content>
       </main>
     }
-
-
-
 
     </Container>
   )

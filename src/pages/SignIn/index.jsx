@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Para criar estados e armazenar essas informações que vem da requisição, exemplo, logar.
 
 import { FiMail, FiLock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -14,10 +13,10 @@ export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { signIn } = useAuth(); // Função de signIn que faz a autenticação do usuário foi desestruturada de useAuth() do arquivo auth.jsx.
+  const { signIn } = useAuth(); 
 
   function handleSignIn() {
-    signIn({ email, password }); // Essa função é chamada no botão entrar "abaixo" e o email e password são enviados para a função do arquivo auth.jsx.
+    signIn({ email, password }); 
   }
 
   return (
@@ -32,7 +31,7 @@ export function SignIn() {
           placeholder="E-mail"
           type="text"
           icon={FiMail}
-          onChange={e => setEmail(e.target.value)} // onChange fica observando quando o conteúdo muda.
+          onChange={e => setEmail(e.target.value)} 
         />
         
         <Input 

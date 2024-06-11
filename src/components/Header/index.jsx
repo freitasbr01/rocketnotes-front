@@ -15,7 +15,6 @@ export function Header() {
     navigation("/");
     signOut();
   }
-  // Vou usar essa função para pode deslogar o usuário. Ao clicar, levou ele para página inicial e deslogou ele.
 
   const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
 

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-// O createGlobalStyle é uma função específica da biblioteca styled-components usada para definir estilos globais em sua aplicação React. Mesmo que você já tenha importado styled-components, você ainda precisará importar createGlobalStyle explicitamente se quiser usar essa funcionalidade.
 
 export default createGlobalStyle`
   * {

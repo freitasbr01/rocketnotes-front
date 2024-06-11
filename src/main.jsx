@@ -1,13 +1,13 @@
-import React from 'react'; // Permite que a gente desenvolva nossas interfaces, disponibiliza a sintaxe do jsx
-import ReactDOM from 'react-dom/client'; // Permite manipular os elementos que fazem parte da página
+import React from 'react';
+import ReactDOM from 'react-dom/client'; 
 import { ThemeProvider } from 'styled-components';
 
 import theme from './styles/theme'
-import GlobalStyles from './styles/global'; // Importando do arquivo global.js de estilização
+import GlobalStyles from './styles/global';
 
-import { AuthProvider } from './hooks/auth'; // Importando o meu contexto.
+import { AuthProvider } from './hooks/auth'; 
 
-import { Routes } from './routes'; // Importação das rotas
+import { Routes } from './routes';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

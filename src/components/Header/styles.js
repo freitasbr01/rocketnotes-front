@@ -18,8 +18,6 @@ export const Container = styled.header`
 
 `;
 
-// Então, styled.header significa “crie um componente React que renderiza uma tag <header> com estes estilos CSS”.
-
 export const Profile = styled(Link)`
   display: flex;
   align-items: center;
@@ -47,7 +45,6 @@ export const Profile = styled(Link)`
     }
   }
 `;
-// Até três niveis de hierarquia está bom, como foi feito no exemplo acima, mais do que isso não.
 
 export const Logout = styled.button`
   border: none;

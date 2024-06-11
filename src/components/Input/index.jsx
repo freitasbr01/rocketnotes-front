@@ -8,5 +8,3 @@ export function Input({ icon: Icon, ...rest }) {
     </Container>
   )
 }
-
-// Se existir icone eu mostro ele, caso contrário não.

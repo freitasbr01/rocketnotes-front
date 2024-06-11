@@ -19,12 +19,11 @@ export function Profile() {
   const [email, setEmail] = useState(user.email);
   const [passwordOld, setPasswordOld] = useState();
   const [passwordNew, setPasswordNew] = useState();
-  // Quando o componente Profile é renderizado, ele inicializa o estado do nome, email e senhas com os valores atuais do usuário.
 
   const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
 
-  const [avatar, setAvatar] = useState(avatarUrl); // EXIBI O AVATAR. Se o usuário já tiver um avatar eu vou colocar aqui.
-  const [avatarFile, setAvatarFile] = useState(null);  // GUARDA O ARQUIVO SELECIONADO. O avatarFile vou usar exclusivamente para carregar a nova foto selecionada pelo usuário, por isso vou colocar como null.
+  const [avatar, setAvatar] = useState(avatarUrl); 
+  const [avatarFile, setAvatarFile] = useState(null);  
 
   const navigate = useNavigate();
 
@@ -41,20 +40,16 @@ export function Profile() {
     }
 
     const userUpdated = Object.assign(user, updated);
-    // O updated vai sobrescrever o user com as informações atualizadas.
 
-    await updateProfile({ user: userUpdated, avatarFile }); // avatarFile que é o arquivo selecionado pelo usuário
-  } // Quando o usuário decide atualizar seu perfil, a função handleUpdate é chamada. Esta função cria um objeto updated com os novos valores do nome, email e senhas. Em seguida, ela chama a função updateProfile passando o novo objeto updated e avatarFile. A execução começa no arquivo index.jsx do perfil e, em seguida, passa para a função updateProfile no arquivo auth.jsx.
+    await updateProfile({ user: userUpdated, avatarFile }); 
+  }
 
-  function handleChangeAvatar(event) { // event é o evento de alteração do avatar, o onChange vai transferir de forma automática pra ele esse evento.
-    const file = event.target.files[0]; // Vou extrair o arquivo e vou pegar ele de event.target.files[0] e vou pegar a primeira posição, nesse caso quero pegar uma única foto que o usuário vai selecionar.
-    // captura o arquivo de imagem selecionado pelo usuário e guarda em uma constante file.
-    setAvatarFile(file); // vou colocar o arquivo que o usuário acabou de selecionar no estado avatarFile.
+  function handleChangeAvatar(event) {
+    const file = event.target.files[0];
+    setAvatarFile(file); 
 
     const imagePreview = URL.createObjectURL(file);
     setAvatar(imagePreview);
-    // toda vez que o usuário mudar de avatar, vou gerar uma URL para atualizar o estado "avatar" que é o estado que exibi o avatar.
-    // utiliza um método nativo do navegador, URL.createObjectURL(), que recebe como parâmetro o arquivo de imagem e retorna uma URL que aponta diretamente para o arquivo. Essa URL é utilizada para atualizar o estado da variável avatar com a nova imagem selecionada pelo usuário. Assim, o componente é atualizado e o avatar do usuário aparece na página.
   }  
 
   return (
