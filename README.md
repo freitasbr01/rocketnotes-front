@@ -1,7 +1,7 @@
 <h2 align="center">RocketNotes</h2>
 
 <h1 align="center">
-    <img width="600px" alt="NextLevelWeek" title="#NextLevelWeek" src="https://github.com/freitasbr01/rocketmovies-front/blob/main/src/assets/Rocketmovies.png" />
+    <img width="600px" alt="NextLevelWeek" title="#NextLevelWeek" src="https://github.com/freitasbr01/rocketnotes-front/blob/main/src/assets/rocketnotes2.png" />
 </h1>
 
 <p align="center">
